@@ -109,11 +109,6 @@ public static class ConnectionManager
         "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
         "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ORCLPDB1.localdomain)));User Id=FoodUser; Password=FoodPass;";
 
-    //// MMS Connection
-    //private static readonly string connString =
-    //    "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.114.5)(PORT=1521)))" +
-    //    "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=dwh)));User Id=efvtrn;Password=efvtrn123;";
-
     public static IDbConnection GetConnection()
     {
         var conn = new OracleConnection(connString);
